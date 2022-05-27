@@ -4,7 +4,7 @@ $onyx: #2b2c30;
 
 /* SCSS HEX */
 $charcoal: #264653ff;
-$persian-green:#2a9d8fff;
+$persian-green: #2a9d8fff;
 $maize-crayola: #e9c46aff;
 $sandy-brown: #f4a261ff;
 $burnt-sienna: #e76f51ff;
@@ -23,23 +23,23 @@ $maize-crayola: rgba(233, 196, 106, 1);
 $sandy-brown: rgba(244, 162, 97, 1);
 $burnt-sienna: rgba(231, 111, 81, 1);
 
-$light-text-color:#F0F0F0;
+$light-text-color: #f0f0f0;
 
 body {
-  background-color: $onyx;
   color: $light-text-color;
+  background-color: $onyx;
 }
 
 a {
   // color: $persian-green;
-  color: sandybrown;
+  color: $sandybrown;
   &:focus {
     color: $sandy-brown;
   } 
 
   &:hover {
     color: $sandy-brown;
-    filter:brightness(1.2);
+    filter: brightness(1.2);
   }
 }
 
@@ -48,40 +48,40 @@ a {
 
   &:hover {
     color: $persian-green;
-    filter:brightness(1.2);
+    filter: brightness(1.2);
   }
 }
 
 .card {
   background-color: #6B6B6B;
   color: $light-text-color;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: .5s cubic-bezier(.075, .82, .165, 1);
 }
 
 #header:target {
 
   h1 > a {
     color: black;
-    background-color:$sandy-brown;
+    background-color: $sandy-brown;
   }
 }
 
 #contact:target {
   color: black;
-  background-color:$sandy-brown;
+  background-color: $sandy-brown;
 }
 
 #projects:target {
   color: black;
-  background-color:$sandy-brown;
+  background-color: $sandy-brown;
 }
 
 #profile:target {
   color: black;
-  background-color:$sandy-brown;
+  background-color: $sandy-brown;
 }
 
 #background:target {
   color: black;
-  background-color:$sandy-brown;
+  background-color: $sandy-brown;
 }
