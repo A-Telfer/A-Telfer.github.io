@@ -1,8 +1,3 @@
-// Importing JavaScript
-//
-// You have two choices for including Bootstrap's JS files—the whole thing,
-// or just the bits that you need.
-
 
 // Option 1
 //
@@ -12,7 +7,7 @@
 
 // Fix masonry glitch for slow loading images
 window.addEventListener("load", ()=>{
-    $('#projects-content').masonry({
+    new Masonry(document.querySelector('#projects-content'), {
         itemSelector: 'div.row>div'
     })
 })
