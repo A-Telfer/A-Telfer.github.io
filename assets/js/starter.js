@@ -14,6 +14,6 @@ import "./masonry.pkgd.min.js"
 // Fix masonry glitch for slow loading images
 window.addEventListener("load", ()=>{
     $('#projects-content').masonry({
-        itemSelector: 'div'
+        itemSelector: 'div.row>div'
     })
 })
