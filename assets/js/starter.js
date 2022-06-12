@@ -8,8 +8,9 @@
 //
 // Import Bootstrap's bundle (all of Bootstrap's JS + Popper.js dependency)
 
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./masonry.pkgd.min.js"
+import "./bootstrap.bundle.min.js"
 
 // Fix masonry glitch for slow loading images
 window.addEventListener("load", ()=>{
