@@ -42,9 +42,10 @@
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-sm">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/#header">Andre Telfer </a>
+      <a class="navbar-brand" href="/">Andre Telfer </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,9 +70,10 @@
   </nav>
 
   <div class="col-md-8 py-5 px-3 mx-auto">
-    <header class="pb-3 mb-5 border-bottom" id="header">
-      <h1 class="h4">
-        <a href="#header" class="d-flex align-items-center text-decoration-none">
+    <!-- Header -->
+    <header class="pb-3 mb-5 border-bottom text-center" id="header">
+      <h1 class="h3 justify-content-center">
+        <a href="#header" class="d-flex align-items-center justify-content-center text-decoration-none">
           <svg width="48" height="48" viewBox="0 0 12.7 12.7" version="1.1" id="svg12390"
             inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)" sodipodi:docname="logo.svg"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -92,11 +94,327 @@
         </a>
       </h1>
       <p class="lead">Deep Learning, Computer Vision, Neuroscience</p>
+      <a href="mailto:andretelfer@cmail.carleton.ca?subject=Hi!">andretelfer@cmail.carleton.ca</a>
     </header>
 
+    <!-- Projects -->
+    <h2 id="projects">PROJECTS</h2>
+    <div id="projects-content" class="row">
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a data-bs-toggle="modal" data-bs-target="#oft-modal">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/oft-dashboard.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">What comes after DeepLabCut: Open Field Test Analysis</h5>
+              <p class="card-text">Simple code for turning DeepLabCut outputs into meaningful results and publishable
+                figures.</p>
+            </div>
+          </div>
+        </a>
+
+        <div class="modal fade" id="oft-modal" tabindex="-1" aria-labelledby="oftModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="oftModalLabel">Deep-learning scoring of the Open Field Test
+                  Expressions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Description</h6>
+                <p>
+                  In Neuroscience, behavioural studies in animals are a key component to understanding how the brain
+                  functions to generate complex cognitive, motivational, and emotional processes. Behavioural assays are
+                  a cornerstone of this behavioural research, and the Open Field Test (OFT) is a common behavioural
+                  assay used to test the anxiolytic effects of drugs, motivation, locomotor activity, fear responses and
+                  exploration
+                </p>
+                <p>
+                  Experiments using the OFT generate many hours of video which need to be carefully scored.
+                  Manual analysis of these videos is a labour intensive process, in many cases taking weeks, and is
+                  prone to reliability/consistency issues.
+                  Several commercial automated tools exist for scoring OFT videos. However these tools are very
+                  expensive,
+                  and may perform worse than more recent Open Source solutions [<a
+                    href="https://www.nature.com/articles/s41386-020-0776-y" target="blank_">ref</a>] (for example, they
+                  may struggle with wires moving in front of the camera).
+                  Furthermore, the Open Field Test is frequently modified and closed-source nature of commercial
+                  solution drives many researchers back to manual scoring if their needs are not met in entirety.
+                </p>
+
+                <p>
+                  This project uses an open source deep learning tool (<a href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>) in order to automate scoring of OFT videos. 
+                  We introduce a video calibration step in order to account for differences between videos (current tools favour a fixed setup which many labs using shared experimental spaces do not have) and more accurately translate between pixels and real distance units.
+                  We also introduce an API that allows researchers to extract new features from dozens of hours of video in only a few lines of code.  
+                </p>
+
+                <h6>Collaborators</h6>
+                <p>Dr. John Lewis (University of Ottawa), Dr. Oliver van Kaick (Carleton University), Dr. Alfonso
+                  Abizaid (Carleton University)</p>
+
+                <h6>Links</h6>
+                <a href="https://github.com/A-Telfer/bapipe-keypoints/tree/fd24e3c7b16bd9901db95f3bbc46efc6f13268f6">https://github.com/A-Telfer/bapipe-keypoints</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a data-bs-toggle="modal" data-bs-target="#facial-expressions-modal">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/mouse-facial-expressions.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Facial Expressions of Mice</h5>
+              <p class="card-text">Recognizing mouse wellness from facial expressions.</p>
+            </div>
+          </div>
+        </a>
+
+        <div class="modal fade" id="facial-expressions-modal" tabindex="-1"
+          aria-labelledby="facialExpressionsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="facialExpressionsModalLabel">Automated Classificatio of Mouse Facial
+                  Expressions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Description</h6>
+                <p>
+                  Many species exhibit facial expressions corressponding to different states of emotion and wellbeing.
+                  Mice are one such species that exhibit facial expressions and recent work has highlighted the ability
+                  for DeepLearning (/AI) to automatically recognize
+                  them in free-moving mice<a
+                    href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0228059"
+                    target="_blank">[1]</a>.
+                  Models like these could be widely applied to behavioural research in order to improve animal care.
+                  Additionally, it potentially offers a new dimension of emotionality data compared to older methods
+                  such as the Open Field Test.
+                </p>
+                <p>
+                  Automatic classification of mouse wellbeing based on facial expressions.
+                </p>
+                <h6>Collaborators</h6>
+                <p>Niek Andresen, Dr. Katharina Hohlbaum, Dr. Alfonso Abizaid</p>
+                <h6>Links</h6>
+                <a href="https://github.com/A-Telfer/mouse-facial-expressions/tree/main/hohlbaum_black_mouse_dataset"
+                  target="_blank">BMv1 Well Being Benchmark</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a data-bs-toggle="modal" data-bs-target="#microscopy-modal">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://a-telfer.github.io/cfos-automatic-cell-counting/_images/screenshot-napari-zone.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Cell Counting using Deep Learning</h5>
+              <p class="card-text">Quantifying intense activation of neurons through automatic counting of c-Fos
+                expressing cells.</p>
+            </div>
+          </div>
+        </a>
+        <div class="modal fade" id="microscopy-modal" tabindex="-1" aria-labelledby="microscopyModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="microscopyModalLabel">Cell Counting using Deep Learning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Description</h6>
+                <p>
+                  c-Fos expression can occur in neurons after intense activation, and can provide information on cell
+                  growth and plasticity <a href="https://www.frontiersin.org/article/10.3389/fncel.2015.00072"
+                    target="_blank">[ref]</a>. Currently, manual cell counting is the gold standard. This is time
+                  intensive
+                  and often takes many weeks,
+                  as experiments can produce hundreds of images, each with hundreds of c-Fos expressing cells.
+                </p>
+                <p>ImageJ is a tool that has been used to semi-automate cell counting. The downside of this approach is
+                  that
+                  parameters such as pixel intensity thresholds, cell sizes, and cell shapes may need to be adjusted per
+                  image. Additionally, images that contain areas of background noise are difficult to extract accurate
+                  cell
+                  counts from.</p>
+                <p>Here we explore alternative methods for performing cell counting for c-Fos expressing cells.</p>
+                <h6>Collaborators</h6>
+                <p>Aylar Rahimi, Brenna MacAuley, Andrea Smith, Dr. Alfonso Abizaid</p>
+                <h6>Links</h6>
+                <a
+                  href="https://a-telfer.github.io/cfos-automatic-cell-counting/yolov5/creating-dataset-by-sampling-cell-images.html">
+                  YOLO c-Fos Expression Detection
+                </a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a data-bs-toggle="modal" data-bs-target="#gait-modal">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/gait-analysis.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Gait Analysis: Mice Walk Silly Too</h5>
+              <p class="card-text">Tracking dysfunction/degeneration in neural circuits through passive gait analysis.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <div class="modal fade" id="gait-modal" tabindex="-1" aria-labelledby="gaitModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="gaitModalLabel">Gait Analysis in Mice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Description</h6>
+                <p>
+                  In both humans and mice, gait analysis has been used to observe dysfunction in the brain.
+                  Gait analysis has been used to provide a measure of brain dysfunction in Parkinson's Disease,
+                  Huntington's Disease, Stroke, and Multiple Sclerosis.
+                  Mouse models of these conditions also observe changes gait.
+
+                  Traditional systems for performing gait analysis in mice often require the mice to be placed in a
+                  specific environment. For treadmill based systems
+                  This project aims at performing automatic gait analysis using deep learning with fewer setup
+                  constraints.
+                </p>
+                <h6>Collaborators</h6>
+                <p>Vanessa Wong, Emmerson Borthwick, Dana Wymark, Delenn Hills</p>
+                <!-- <h6>Links</h6>
+                <p>...</p> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a data-bs-toggle="modal" data-bs-target="#maternal-behavior-modal">
+          <div class="card">
+            <img class="card-img-top" src="assets/images/maternal-example.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Behavioural Classification on 151 Days of Video</h5>
+              <p class="card-text">
+                Automatic scoring of maternal behaviours in low quality videos spanning over 3633 hours.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <div class="modal fade" id="maternal-behavior-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Maternal Dataset: Behavior Classification of 151 Days of
+                  Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h6>Description</h6>
+                <p>Automated scoring of maternal behaviours such as grooming pups, fetching, and feeding, throughout the
+                  day/night cycle. Dataset contains over 3600 hours of video.</p>
+                <h6>Collaborators</h6>
+                <p>Ben Nikkel, Dr. Alfonso Abizaid</p>
+                <!-- <h6>Links</h6>
+          <p>...</p> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Classification of events in Neuronal Dynamics</h5>
+            <p class="card-text">Time series applications of Deep Learning</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Neural Plasticity in Children with Congenital Total-blindness</h5>
+            <p class="card-text">Using deep learning to track focus in an indented image recognition task.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Inverse Kinematics of Mouse Motion</h5>
+            <p class="card-text">Inferring full 3D geometry and motion of mouse gait from 2D pose data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project Modals -->
+    <!-- template -->
+    <div class="modal fade" id="template-modal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="templateModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Description</h6>
+            <p>...</p>
+            <h6>Collaborators</h6>
+            <p>...</p>
+            <h6>Links</h6>
+            <p>...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <hr class="my-2" />
+    <h2 id="projects">PROJECTS</h2>
     <div id="projects-content" class="row">
       <div class="col-sm-6 col-lg-4 mb-4">
-        <h2 id="projects">PROJECTS</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Biocoders co-founder</h5>
+            <p class="card-text">Supporting researchers developing coding skills at Carleton University and the
+              University of Ottawa</p>
+          </div>
+        </div>
       </div>
 
       <div class="col-sm-6 col-lg-4 mb-4">
@@ -114,120 +432,19 @@
 
       <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card">
-          <img class="card-img-top" src="assets/images/maternal-example.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Behavioural Classification on 151 Days of Video</h5>
-            <p class="card-text">
-              This project explores AI-driven classification of maternal behaviours in low quality videos spanning over
-              3633 hours.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Creating a research website and sharing code</h5>
-            <p class="card-text">A guide to how I share code for scientific work.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Camera calibration and registration for behavioural videos</h5>
-            <p class="card-text">Intrinsic and extrinsic calibration examples from 3D photogrammetry.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <img class="card-img-top"
-            src="https://a-telfer.github.io/cfos-automatic-cell-counting/_images/screenshot-napari-zone.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Cell Counting using Deep Learning</h5>
-            <p class="card-text">Quantifying intense activation of neurons through automatic counting of c-Fos
-              expressing cells.</p>
-            <a
-              href="https://a-telfer.github.io/cfos-automatic-cell-counting/yolov5/creating-dataset-by-sampling-cell-images.html">YOLOv5
-              Object Detection</a>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <img class="card-img-top" src="assets/images/mouse-facial-expressions.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Facial Expressions of Mice</h5>
-            <p class="card-text">Recognizing mouse wellness from facial expressions.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <img class="card-img-top" src="assets/images/oft-dashboard.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">What comes after DeepLabCut: Open Field Test Analysis</h5>
-            <p class="card-text">Simple code for turning DeepLabCut outputs into meaningful results and publishable
-              figures.</p>
-
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <img class="card-img-top" src="assets/images/gait-analysis.png" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Gait Analysis: Mice Walk Silly Too</h5>
-            <p class="card-text">Tracking dysfunction/degeneration in neural circuits through passive gait analysis.</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biocoders co-founder</h5>
-            <p class="card-text">Supporting researchers developing coding skills at Carleton University and the
-              University of Ottawa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
           <div class="card-body">
             <h5 class="card-title">Practical math and the code to do it, for Neuroscientists</h5>
             <p class="card-text">PCA, t-SNE, UMAP, Fourier, and other concepts applied to neuroscience data.</p>
           </div>
         </div>
       </div>
+    </div> -->
 
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Classification of events in Neuronal Dynamics</h5>
-            <p class="card-text">Time series applications of Deep Learning</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- Profile, Background, Contact -->
     <hr class="my-2" />
     <div class="row" data-masonry='{"percentPosition": true }'>
       <div class="col-md-6 mb-3">
-        <h3 id="profile">PROFILE</h3>
+        <h3 id="profile">RESEARCH INTEREST</h3>
         <p>
           Neuroscience exists at the intersection of many discplines, and can produce data ranging from the cellular and
           gene level, up to societal.
@@ -263,12 +480,11 @@
       <div class="col-md-6 mb-3">
         <h3 id="contact">CONTACT</h3>
         <ul>
-          <li><a href="#">andretelfer@cmail.carleton.ca</a></li>
+          <li><a href="mailto:andretelfer@cmail.carleton.ca">andretelfer@cmail.carleton.ca</a></li>
         </ul>
       </div>
     </div>
     <hr class="my-5">
-
     <p class="text-muted">andretelfer@cmail.carleton.ca.</p>
   </div>
 
@@ -281,7 +497,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script type="module" src="assets/js/starter.js"></script>
 </body>

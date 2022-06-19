@@ -31,8 +31,9 @@ body {
 }
 
 a {
-  // color: $persian-green;
   color: $sandy-brown;
+  cursor: pointer;
+  transition: 0.25s linear;
   &:focus {
     color: $sandy-brown;
   } 
@@ -48,7 +49,7 @@ a {
 
   &:hover {
     color: $persian-green;
-    filter: brightness(1.2);
+    filter: brightness(1.1);
   }
 }
 
@@ -56,10 +57,14 @@ a {
   background-color: #6B6B6B;
   color: $light-text-color;
   transition: .5s cubic-bezier(.075, .82, .165, 1);
+
+  img {
+    transition: .5s linear;
+    filter: brightness(0.9);
+  }
 }
 
 #header:target {
-
   h1 > a {
     color: black;
     background-color: $sandy-brown;
@@ -84,4 +89,10 @@ a {
 #background:target {
   color: black;
   background-color: $sandy-brown;
+}
+
+.modal-content {
+  // color: black;
+  color: $light-text-color;
+  background-color: #6B6B6B;;
 }
