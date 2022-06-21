@@ -56,13 +56,16 @@
             <a class="nav-link" aria-current="page" href="#projects">{ Projects }</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#profile">{ Profile }</a>
+            <a class="nav-link" href="#profile">{ Research Interest }</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#background">{ Background }</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">{ Contact }</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">{ Publications }</a>
           </li>
         </ul>
       </div>
@@ -98,13 +101,13 @@
     </header>
 
     <!-- Projects -->
-    <h2 id="projects">PROJECTS</h2>
+    <h3 id="projects">PROJECTS</h3>
     <div id="projects-content" class="row">
 
       <div class="col-sm-6 col-lg-4 mb-4">
         <a data-bs-toggle="modal" data-bs-target="#oft-modal">
           <div class="card">
-            <img class="card-img-top" src="assets/images/oft-dashboard.png" alt="">
+            <img class="card-img-top" src="assets/images/oft-dashboard-thumbnail.jpg" alt="">
             <div class="card-body">
               <h5 class="card-title">What comes after DeepLabCut: Open Field Test Analysis</h5>
               <p class="card-text">Simple code for turning DeepLabCut outputs into meaningful results and publishable
@@ -144,9 +147,14 @@
                 </p>
 
                 <p>
-                  This project uses an open source deep learning tool (<a href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>) in order to automate scoring of OFT videos. 
-                  We introduce a video calibration step in order to account for differences between videos (current tools favour a fixed setup which many labs using shared experimental spaces do not have) and more accurately translate between pixels and real distance units.
-                  We also introduce an API that allows researchers to extract new features from dozens of hours of video in only a few lines of code.  
+                  This project uses an open source deep learning tool (<a
+                    href="https://github.com/DeepLabCut/DeepLabCut">DeepLabCut</a>) in order to automate scoring of OFT
+                  videos.
+                  We introduce a video calibration step in order to account for differences between videos (current
+                  tools favour a fixed setup which many labs using shared experimental spaces do not have) and more
+                  accurately translate between pixels and real distance units.
+                  We also introduce an API that allows researchers to extract new features from dozens of hours of video
+                  in only a few lines of code.
                 </p>
 
                 <h6>Collaborators</h6>
@@ -154,7 +162,8 @@
                   Abizaid (Carleton University)</p>
 
                 <h6>Links</h6>
-                <a href="https://github.com/A-Telfer/bapipe-keypoints/tree/fd24e3c7b16bd9901db95f3bbc46efc6f13268f6">https://github.com/A-Telfer/bapipe-keypoints</a>
+                <a
+                  href="https://github.com/A-Telfer/bapipe-keypoints/tree/fd24e3c7b16bd9901db95f3bbc46efc6f13268f6">https://github.com/A-Telfer/bapipe-keypoints</a>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -167,7 +176,7 @@
       <div class="col-sm-6 col-lg-4 mb-4">
         <a data-bs-toggle="modal" data-bs-target="#facial-expressions-modal">
           <div class="card">
-            <img class="card-img-top" src="assets/images/mouse-facial-expressions.png" alt="">
+            <img class="card-img-top" src="assets/images/mouse-facial-expressions-thumbnail.jpg" alt="">
             <div class="card-body">
               <h5 class="card-title">Facial Expressions of Mice</h5>
               <p class="card-text">Recognizing mouse wellness from facial expressions.</p>
@@ -270,7 +279,7 @@
       <div class="col-sm-6 col-lg-4 mb-4">
         <a data-bs-toggle="modal" data-bs-target="#gait-modal">
           <div class="card">
-            <img class="card-img-top" src="assets/images/gait-analysis.png" alt="">
+            <img class="card-img-top" src="assets/images/gait-analysis-thumbnail.jpg" alt="">
             <div class="card-body">
               <h5 class="card-title">Gait Analysis: Mice Walk Silly Too</h5>
               <p class="card-text">Tracking dysfunction/degeneration in neural circuits through passive gait analysis.
@@ -315,7 +324,7 @@
       <div class="col-sm-6 col-lg-4 mb-4">
         <a data-bs-toggle="modal" data-bs-target="#maternal-behavior-modal">
           <div class="card">
-            <img class="card-img-top" src="assets/images/maternal-example.png" alt="">
+            <img class="card-img-top" src="assets/images/maternal-example-thumbnail.jpg" alt="">
             <div class="card-body">
               <h5 class="card-title">Behavioural Classification on 151 Days of Video</h5>
               <p class="card-text">
@@ -379,31 +388,6 @@
       </div>
     </div>
 
-
-    <!-- Project Modals -->
-    <!-- template -->
-    <div class="modal fade" id="template-modal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="templateModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h6>Description</h6>
-            <p>...</p>
-            <h6>Collaborators</h6>
-            <p>...</p>
-            <h6>Links</h6>
-            <p>...</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- <hr class="my-2" />
     <h2 id="projects">PROJECTS</h2>
     <div id="projects-content" class="row">
@@ -440,49 +424,77 @@
       </div>
     </div> -->
 
+    <hr class="my-2 mb-5" />
+    <div class="row">
+    <!-- <div class="col-md- mb-3"> -->
+      <h3 id="profile">RESEARCH INTEREST</h3>
+      <p>
+        Neuroscience exists at the intersection of many disciplines, and can produce data ranging from the cellular and
+        gene level, up to societal. My research interest is to apply deep learning (a substream of AI) to decode Neuroscience datasets.
+        I'm passionate about collaborating with groups on their datasets and invite anyone interested to <a href="mailto:andretelfer@cmail.carleton.ca">send me an email</a>.
+      </p>
+    <!-- </div> -->
+    </div>
+
     <!-- Profile, Background, Contact -->
-    <hr class="my-2" />
-    <div class="row" data-masonry='{"percentPosition": true }'>
-      <div class="col-md-6 mb-3">
-        <h3 id="profile">RESEARCH INTEREST</h3>
-        <p>
-          Neuroscience exists at the intersection of many discplines, and can produce data ranging from the cellular and
-          gene level, up to societal.
-          In recent decades, we've seen new techniques rapidly increase the amount of data produced across the
-          subdomains of Neuroscience.
-        </p>
-        <p>
-          For data scientists, the complexity, quantity, and human-impact of Neuroscience data makes it an exciting
-          target for innovation.
-          Neuroscience stands to benefit immensely from this collaboration.
-          Many traditional quantification methods are often rooted in manual work which use simplified features that are
-          easy to score.
-          In many cases these techniques have struggled to scale to larger datasets, and sometimes face underreported
-          reproducibility issues.
-          The growing partnership between Data Science and Neuroscience is alleviating these issues, and bringing in new
-          techniques, particularly in modeling.
-        </p>
-        <p>
-          My research interest is to adapt these recent and rapid advances in data science to enable Neuroscience
-          research.
-          This website aims to showcase some of these examples.
-          Contact me for any questions, help adopting these approaches, or just to say hi.
-        </p>
-      </div>
-      <div class="col-md-6 mb-3">
+    <hr class="my-2 mb-4" />
+    <div class="row">
+      <div class="col-md-4 mb-3">
         <h3 id="background">BACKGROUND</h3>
         <ul>
           <li>Student, MSc Neuroscience.</li>
           <li>BCs Computer Science, Math Minor.</li>
           <li>Carleton University, Ottawa, Canada.</li>
         </ul>
-      </div>
-      <div class="col-md-6 mb-3">
+
         <h3 id="contact">CONTACT</h3>
         <ul>
           <li><a href="mailto:andretelfer@cmail.carleton.ca">andretelfer@cmail.carleton.ca</a></li>
         </ul>
       </div>
+      <div class="col-md-8 mb-3">
+        <h3 id="publications">PUBLICATIONS (WIP)</h3>
+        <hr class="my-2" />
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                CAN-ACN Poster 2022
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <a href="assets/images/telfer-can2022.png" target="blank_">
+                  <img class="img-fluid" src="assets/images/telfer-can2022-thumbnail.jpg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                SFN Poster 2021
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="accordion-body">
+                  <a href="assets/images/telfer-sfn2021.png" target="blank_">
+                    <img class="img-fluid" src="assets/images/telfer-sfn2021-thumbnail.jpg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
     </div>
     <hr class="my-5">
     <p class="text-muted">andretelfer@cmail.carleton.ca.</p>
