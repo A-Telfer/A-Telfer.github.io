@@ -62,6 +62,21 @@ a {
   &:hover {
     color: $persian-green;
     filter: brightness(1.1);
+
+  }
+}
+
+a.no-highlight {
+  filter: none;
+  text-decoration: none;
+}
+
+
+div.highlight-on-hover {
+  transition: 0.1s linear;
+  border: 2px solid rgba(0,0,0,0);
+  &:hover {
+    border: 2px solid $sandy-brown;
   }
 }
 
