@@ -105,21 +105,21 @@
     <div class="row">
       <div class="col-sm-4 mb-4 shadow">
         <div class="card" style="width: 100%;">
-          <img class="card-img-top" style="filter: brightness(80%);" src="assets/images/dalle-camera-512.png"  alt="Card image cap">
+          <img class="card-img-top" style="filter: brightness(80%);" src="assets/images/dalle-camera-512.jpg"  alt="Card image cap">
           <h4 class="card-title text-center mt-1">Computer Vision</h4>
         </div>
       </div>
 
       <div class="col-sm-4 mb-4 shadow">
         <div class="card" style="width: 100%;">
-          <img class="card-img-top" src="assets/images/dalle-computer-512.png"  alt="Card image cap">
+          <img class="card-img-top" src="assets/images/dalle-computer-512.jpg"  alt="Card image cap">
           <h4 class="card-title text-center mt-1">Machine Learning</h4>
         </div>
       </div>
 
       <div class="col-sm-4 mb-4 shadow">
         <div class="card" style="width: 100%;">
-          <img class="card-img-top" src="assets/images/dalle-brain-512.png"  alt="Card image cap">
+          <img class="card-img-top" src="assets/images/dalle-brain-512.jpg"  alt="Card image cap">
           <h4 class="card-title text-center mt-1">Neuroscience</h4>
         </div>
       </div>
@@ -192,11 +192,64 @@
     <!-- Projects -->
     <h3 id="projects">ONGOING PROJECTS</h3>
     <div id="projects-content" class="row">
+      
+
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <a class="no-highlight" data-bs-toggle="modal" data-bs-target="#spiking-neural-docoding-modal">
+          <div class="highlight-on-hover">
+
+            <div class="card">
+              <video class="card-img-top" src="assets/images/spiking-neuron.webm" type="video/webm" autoplay loop> </video>
+              <div class="card-body">
+                <h5 class="card-title">Decoding neural-behaviour correlates with Spiking Neural Networks</h5>
+                <p class="card-text">Predicting movement vectors from neural recordings using Artificial Spiking Neural Network.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="modal fade" id="spiking-neural-docoding-modal" tabindex="-1" aria-labelledby="spikingNeuralDecodingModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="spikingNeuralDecodingModalLabel">Decoding neural-behaviour correlates with Spiking Neural Networks</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <h5>Description</h5>
+                <p>Using an Spiking Neural Network (SNN) with leaky integrate-and-fire dynamics we decode the finger velocity of a primate completing a reaching task from multielectrode array neural recordings.</p>
+                <h5>Motivation</h5>
+                <p>
+                  As the number of companies developing brain-computer interfaces continues to grow (e.g., Neuralink and Synchron), it is critical to investigate low latency and energy-efficient neural decoding methods. We wanted to show that spiking neural networks (SNNs), which can be implemented on neuromorphic chips, can decode such signals and fill this gap.
+                </p>
+                <p>
+                  Additionally, SNNs are closer to the underlying neuron biophysics. Therefore, we hoped that by using realistic neural dynamics, we could learn more useful temporal representations in the data compared to traditional decoding or artificial neural network methods which rely on averaging the number of spikes over time.
+                </p>
+                
+                <h5>Links</h5>
+                <ul>
+                  <li>
+                    <a href="https://devpost.com/software/neural-decoding-with-spiking-neural-networks" target="_blank">DevPost Article </a>
+                  </li>
+                </ul>
+                
+                <h5>Collaborators</h5>
+                <p>{Michael Stuck, XingYun Wang, Zachary Friedenberger, Emine Topcu-Can} @ University of Ottawa</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-sm-6 col-lg-4 mb-4">
         <a class="no-highlight" target="_blank" href="https://abizaidlabai.uc.r.appspot.com/">
           <div class="highlight-on-hover">
             <div class="card">
-              <img class="card-img-top" src="assets/images/mgs-consistency-app-thumbnail.png" alt="">
+              <img class="card-img-top" src="assets/images/mgs-consistency-app-thumbnail.jpg" alt="">
               <div class="card-body">
                 <h5 class="card-title">Web application for teaching behavioural scoring.</h5>
                 <p class="card-text">Onboard new researchers and improve consistency between labs when scoring the Mouse Grimace Scale.</p>
@@ -277,6 +330,8 @@
           </div>
         </div>
       </div>
+
+      
 
       <div class="col-sm-6 col-lg-4 mb-4">
         <a class="no-highlight" data-bs-toggle="modal" data-bs-target="#facial-expressions-modal">
@@ -427,48 +482,6 @@
                 <p>Vanessa Wong, Emmerson Borthwick, Dana Wymark, Delenn Hills</p>
                 <!-- <h6>Links</h6>
                 <p>...</p> -->
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <a class="no-highlight" data-bs-toggle="modal" data-bs-target="#maternal-behavior-modal">
-          <div class="highlight-on-hover">
-
-            <div class="card">
-              <img class="card-img-top" src="assets/images/maternal-example-thumbnail.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Behavioural Classification on 151 Days of Video</h5>
-                <p class="card-text">
-                  Automatic scoring of maternal behaviours in low quality videos spanning over 3633 hours.
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <div class="modal fade" id="maternal-behavior-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Maternal Dataset: Behavior Classification of 151 Days of
-                  Video</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <h6>Description</h6>
-                <p>Automated scoring of maternal behaviours such as grooming pups, fetching, and feeding, throughout the
-                  day/night cycle. Dataset contains over 3600 hours of video.</p>
-                <h6>Collaborators</h6>
-                <p>Ben Nikkel, Dr. Alfonso Abizaid</p>
-                <!-- <h6>Links</h6>
-          <p>...</p> -->
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
