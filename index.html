@@ -7,23 +7,90 @@
 
   <!-- Start SEO -->
   <meta name="description"
-    content="Personal website for Andre Telfer, a graduate student working on Neuroscience and Deep Learning problems.">
+    content="Graduate student working on Neuroscience and Deep Learning problems.">
   <meta name="keywords"
-    content="Andre Telfer, Telfer, Andre, Ottawa, Canada, Research, Deep Learning, Artificial Intelligence, AI, Machine Learning, ML, Computer Vision, Automated, Neuroscience, Computer Science, Behaviour, Mice, Mouse, how to, score">
-  <meta name="author" content="Andre Telfer">
+    content="Andre Telfer, Ottawa, Canada, Research, Deep Learning, Carleton University">
 
   <!-- content schema for crawlers https://schema.org/Person -->
+  <!-- Validate here: https://validator.schema.org/ -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://a-telfer.github.io/#person",
       "email": "mailto:andretelfer@cmail.carleton.ca",
-      "sameAs": "https://www.linkedin.com/in/andretelfer",
-      "jobTitle": "Student, MSc Neuroscience",
+      "birthPlace" : {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vancouver",
+          "addressRegion": "BC",
+          "addressCountry": "Canada"
+        }
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Carleton University",
+          "sameAs": [
+            "https://carleton.ca/",
+            "https://twitter.com/Carleton_U",
+            "https://www.facebook.com/carletonuniversity/",
+            "https://ca.linkedin.com/school/carleton-university/"
+          ]
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "West Point Grey Academy",
+          "sameAs": [
+            "https://www.wpga.ca/",
+            "https://en.wikipedia.org/wiki/West_Point_Grey_Academy"
+          ]
+        }
+      ],
+
+      "colleague": [
+        "http://people.scs.carleton.ca/~olivervankaick/",
+        "https://carleton.ca/neuroscience/profile/alfonso-abizaid/",
+        "https://science.uottawa.ca/biology/people/lewis-john-e"
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Carleton University",
+          "sameAs": [
+            "https://carleton.ca/",
+            "https://twitter.com/Carleton_U",
+            "https://www.facebook.com/carletonuniversity/",
+            "https://ca.linkedin.com/school/carleton-university/"
+          ]
+        }
+      ],
+      "jobTitle": "Graduate Student", 
+      "Description": "AI Research",
+      "disambiguatingDescription": "Studies animal behaviour using deep learning",
+      "image": "https://avatars.githubusercontent.com/u/75952206?v=4",
+      "gender": "Male",
       "name": "Andre Telfer",
+      "alternateName": "Andre Telfer",
       "givenName": "Andre",
       "familyName": "Telfer",
-      "url": "https://a-telfer.github.io/"
+      "nationality": "Canadian",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "Ontario",
+        "addressCountry": "Canada"
+      },
+      "url": "https://a-telfer.github.io/",
+      "sameAs": [
+        "https://www.linkedin.com/in/andretelfer",
+        "https://www.researchgate.net/profile/Andre-Telfer",
+        "https://scholar.google.ca/citations?user=Kj37_DMAAAAJ&hl=en",
+        "https://github.com/A-Telfer",
+        "https://twitter.com/AndreNeuroland",
+        "https://devpost.com/andretelfer"
+      ]
     }
   </script>
 
@@ -39,7 +106,7 @@
 
   <!-- Local CSS -->
   <link rel="stylesheet" href="assets/css/starter.css">
-  <title>A.Telfer</title>
+  <title>Andre Telfer</title>
 </head>
 
 <body>
@@ -527,50 +594,6 @@
       </div>
     </div>
 
-    <!-- <hr class="my-2" />
-    <h2 id="projects">PROJECTS</h2>
-    <div id="projects-content" class="row">
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Biocoders co-founder</h5>
-            <p class="card-text">Supporting researchers developing coding skills at Carleton University and the
-              University of Ottawa</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Preprocessing Behavioural Data</h5>
-            <p class="card-text">Preparing datasets for analysis pipelines.</p>
-            <a
-              href="https://a-telfer.github.io/preprocessing-behavior-videos/transcoding-large-experiments.html">Transcoding</a>
-            <a href="https://a-telfer.github.io/preprocessing-behavior-videos/datasheet-cleanup.html">Datasheet
-              Cleanup</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Practical math and the code to do it, for Neuroscientists</h5>
-            <p class="card-text">PCA, t-SNE, UMAP, Fourier, and other concepts applied to neuroscience data.</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <hr class="my-2 mb-5" /> -->
-
-
-    
-
-    <!-- Profile, Background, Contact -->
-
-
     <hr class="my-5">
     <p class="text-muted">andretelfer@cmail.carleton.ca.</p>
   </div>
@@ -586,7 +609,6 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script type="module" src="assets/js/starter.js"></script>
 </body>
 
